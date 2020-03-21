@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 
 namespace M3uParser
 {
@@ -32,7 +34,21 @@ namespace M3uParser
             return file;
         }
 
-        public M3uFile ParseFrom(string source) => Parse(File.ReadAllText(source));
+        public M3uFile ParseFrom(string path) => Parse(File.ReadAllText(path));
+
+        public async Task<M3uFile> ParseFrom(Uri uri)
+        {
+            if (uri == null)
+                throw new ArgumentNullException(nameof(uri));
+
+            using (var httpClient = new HttpClient())
+            {
+                var resp = await httpClient.GetAsync(uri).ConfigureAwait(false);
+                var data = await resp.Content.ReadAsStringAsync().ConfigureAwait(false);
+
+                return Parse(data);
+            }
+        }
 
         private void TryAddMedia(M3uFile file, string data)
         {
