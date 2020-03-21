@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29911.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M3uParser", "M3uParser\M3uParser.csproj", "{4283408D-D26A-486D-8AAC-C49AF12F505A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M3uParser.Tests", "M3uParser.Tests\M3uParser.Tests.csproj", "{36551DB6-9432-4D5A-9CE2-5C82C3D7633F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4283408D-D26A-486D-8AAC-C49AF12F505A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4283408D-D26A-486D-8AAC-C49AF12F505A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4283408D-D26A-486D-8AAC-C49AF12F505A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4283408D-D26A-486D-8AAC-C49AF12F505A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36551DB6-9432-4D5A-9CE2-5C82C3D7633F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36551DB6-9432-4D5A-9CE2-5C82C3D7633F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36551DB6-9432-4D5A-9CE2-5C82C3D7633F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36551DB6-9432-4D5A-9CE2-5C82C3D7633F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3687F578-3F47-4E52-893E-8355A4B4A940}
+	EndGlobalSection
+EndGlobal
